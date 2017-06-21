@@ -2680,9 +2680,10 @@ def _GetMSBuildGlobalProperties(spec, version, guid, gyp_file_name):
       ]
     ]
 
-  if os.environ.get('PROCESSOR_ARCHITECTURE') == 'AMD64' or \
-     os.environ.get('PROCESSOR_ARCHITEW6432') == 'AMD64':
-    properties[0].append(['PreferredToolArchitecture', 'x64'])
+  # JE: Disabling this, breaks edit and continue on 32bit processes!
+  # if os.environ.get('PROCESSOR_ARCHITECTURE') == 'AMD64' or \
+  #    os.environ.get('PROCESSOR_ARCHITEW6432') == 'AMD64':
+  #   properties[0].append(['PreferredToolArchitecture', 'x64'])
 
   if spec.get('msvs_target_platform_version'):
     target_platform_version = spec.get('msvs_target_platform_version')
