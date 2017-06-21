@@ -12,3 +12,6 @@ Official Google links:
 - [main page](https://chromium.googlesource.com/external/gyp)
 - [documentation](https://gyp.gsrc.io)
 - [bug tracker](https://bugs.chromium.org/p/gyp/issues/list)
+
+See also:
+- [hello-gyp](https://github.com/springmeyer/hello-gyp) - basic gypfile and build instructions
